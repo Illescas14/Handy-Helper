@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color_text-primary: hsl(189, 75%, 41%);
+    --color_text-secundary: #101E2C;
+    --color_text-tertiary: #485663;
+    --main_color-primary: hsl(189, 75%, 41%);
+    --main_color-secundary: #48dfd0;
+    --background-color: #FAFBFE;
+    --lowText_font_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.container__header {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 120px; /* Reduciendo aún más el tamaño del logo */
+    height: auto;
+    border-radius: 50%;
+}
+.logo-container img {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+  }
+.logo:hover img {
+    display: block;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+   
+  }
+  
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu nav {
+    margin: 0px 20px;
+}
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu nav ul li {
+    list-style: none;
+    margin: 20px 16px;
+}
+
+.menu nav ul li a {
+    color: var(--color_text-secundary);
+    font-size: var(--lowText_font_size);
+    position: relative;
+}
+
+.menu nav ul li a:hover {
+    color: var(--color_text-primary);
+}
+
+.btn__quote {
+    display: block;
+    padding: 8px 40px;
+    border: 2px solid var(--main_color-primary);
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 0px 20px;
+    transition: all 300ms;
+    color:black;
+    background-color: #48dfd0;
+}
+
+.btn__quote:hover {
+    color: white;
+    background:var(--main_color-secundary) ;
+}
+
+.menu .socialMedia {
+    margin: 0px 10px;
+}
+
+.menu .socialMedia a {
+    margin: 0px 4px;
+}
+
+.menu .socialMedia img {
+    width: 40px;
+    border-radius: 15%;
+}
+
+/* Portada de inicio */
+.container__cover {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: var(--main_color-secundary);
+}
+
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text__cover {
+    width: 100%;
+    padding-right: 150px;
+}
+
+.text__cover h1 {
+    font-size: 45px;
+    color: var(--color_text-secundary);
+}
+
+.text__cover p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+.btn__text {
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--main_color-primary);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.btn__text:hover {
+    background: transparent;
+    border: 2px solid var(--main_color-primary);
+    color: var(--color_text-primary);
+}
+
+.image__cover {
+    width: 100%;
+}
+
+.image__cover img {
+    width: 550px;
+    border-radius: 12px;
+}
+
+/* Estilos generales CARDS */
+.container__card-primary {
+    padding-top: 100px;
+}
+
+.card__primary {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__card-primary {
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary p {
+    color: var(--color_text-primary);
+    letter-spacing: 2px;
+    font-size: var(--text_size_title);
+    font-weight: 500;
+}
+
+.text__card-primary h1 {
+    font-size: var(--text_paragraph);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container__box-cardPrimary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__card-primary {
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box__card-primary:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary h2 {
+    font-size: var(--text_title_card);
+    margin-top: 20px;
+}
+
+.box__card-primary p {
+    align-self: center;
+    font-weight: var(--text_paragraph);
+    margin-top: 5px;
+    color: black;
+}
+
+.box__card-primary img {
+    width: 70px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.user-cards-container {
+    background-color: #f7f7f7; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+}
+
+.center-text {
+    text-align: center;
+    margin-top: 2rem; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Ajustes adicionales para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .text__cover {
+        padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+    .cover {
+        flex-direction: column; /* Coloca la imagen debajo del texto */
+    }
+
+    .image__cover img {
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    }
+
+    .menu nav ul {
+        flex-direction: column; /* Coloca los enlaces en una columna */
+        align-items: center; /* Centra los enlaces */
+    }
+
+    .menu nav ul li {
+        margin: 10px 0; /* Espaciado vertical entre los enlaces */
+    }
+}

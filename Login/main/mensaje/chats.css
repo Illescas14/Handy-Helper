@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a0ece5;
+    margin: 0;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+.app-header {
+    background-color: #5ca3e6;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Asegura que los elementos estén distribuidos uniformemente */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+.container__header {
+    display: flex;
+    width: 100%; /* Asegura que el contenedor use todo el ancho del encabezado */
+    align-items: center;
+    justify-content: center; /* Centra los contenidos horizontalmente */
+}
+
+h1 {
+    flex-grow: 1; /* Permite que el título crezca para usar cualquier espacio disponible */
+    text-align: center; /* Alinea el texto al centro */
+    margin: 0; /* Elimina márgenes para una alineación más precisa */
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 30px; /* Aumenta el tamaño del icono */
+    padding: 15px; /* Aumenta el espacio alrededor del icono */
+    margin-right: auto; /* Empuja todo lo demás hacia la derecha */
+    display: flex; /* Asegura alineación perfecta */
+    align-items: center; /* Centra el icono verticalmente */
+}
+
+.back-button:hover {
+    color: #ccc; /* Cambio de color al pasar el ratón por encima */
+}
+
+
+.chat-list {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-entry.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.chat-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+/* Estilos generales de la tarjeta */
+.chat-entry.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho final */
+}
+
+/* Media queries para ajustar los márgenes y el tamaño de la tarjeta basado en el tamaño de la pantalla */
+@media (max-width: 768px) {
+    .chat-entry.card {
+        width: 95%; /* Aumenta el ancho para pantallas pequeñas */
+        margin: 10px 2.5%; /* Ajusta los márgenes para mantener la tarjeta centrada y con espacio */
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-entry.card {
+        width: 100%; /* Aprovecha todo el ancho disponible en pantallas muy pequeñas */
+        margin: 10px 0; /* Reduce el margen lateral a cero */
+        padding: 10px 5px; /* Reduce el padding lateral para más espacio de texto */
+    }
+}
+
+/* Ajustes para garantizar que el botón de regreso y el título se mantengan bien posicionados */
+.app-header {
+    justify-content: space-between; /* Asegura que los elementos estén distribuidos uniformemente */
+    padding: 10px 20px; /* Ajusta el padding para consistencia */
+}
+
+.container__header {
+    width: 100%; /* Utiliza todo el ancho disponible */
+}
+
+.back-button {
+    font-size: 24px; /* Ajusta el tamaño del icono de regreso */
+    padding: 10px 20px; /* Asegura un área clickeable más grande */
+}
+

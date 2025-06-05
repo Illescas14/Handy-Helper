@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #beece8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw; /* Asegura que el body no sea más ancho que el viewport */
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+header {
+    background-color: rgb(44, 41, 41);
+    color: #FFF;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header, .right-header {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    font-size: 24px;
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.profile-info img, .left-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.messages {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.my-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.their-message {
+    align-self: flex-start;
+    background-color: #ebebeb;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.message-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex; /* Utiliza flexbox para alinear los elementos del formulario */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea los elementos verticalmente */
+    position: fixed; /* Mantiene esta sección al fondo de la pantalla */
+    bottom: 0; /* Asegura que se mantiene en la parte inferior */
+    background-color: #beece8; /* Fondo blanco para la barra de entrada */
+}
+
+form {
+    display: flex; /* Asegura que los elementos del formulario estén en línea */
+    width: 100%; /* Ocupa el ancho completo del contenedor padre */
+    max-width: 500px; /* Limita el ancho máximo para mantener la estética */
+}
+
+textarea {
+    flex-grow: 1; /* Permite que el textarea crezca y llene el espacio disponible */
+    height: 50px; /* Altura fija del textarea */
+    padding: 10px; /* Espaciado interno para el texto */
+    border: 2px solid #4CAF50; /* Borde más destacado y estilizado */
+    border-radius: 25px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio entre el textarea y el botón */
+    outline: none; /* Elimina el contorno al enfocar */
+}
+
+button {
+    width: 50px; /* Ancho fijo para el botón */
+    height: 50px; /* Altura fija para mantener la forma cuadrada */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Hace el botón completamente circular */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    display: flex; /* Usa flexbox para centrar el icono internamente */
+    align-items: center; /* Centra verticalmente el contenido del botón */
+    justify-content: center; /* Centra horizontalmente el contenido del botón */
+}
+
+button:hover {
+    background-color: #45a049; /* Color al pasar el ratón por encima */
+}
