@@ -45,7 +45,7 @@ function getLocationInfo($latitude, $longitude)
         return ['city' => '', 'state' => ''];
     }
 
-    $apiKey = 'AIzaSyCYn0-poPALDPQ7P6LpcEaZJw7iS9bXs9Y'; // Reemplazar con tu propia clave de API de Google Maps
+    $apiKey = 'aqui va tu api key'; // Reemplazar con tu propia clave de API de Google Maps
 
     // URL para la solicitud de Geocodificación Inversa
     $url = "https://maps.googleapis.com/maps/api/geocode/json?latlng={$latitude},{$longitude}&key={$apiKey}";
